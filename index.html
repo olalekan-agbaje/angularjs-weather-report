@@ -23,8 +23,8 @@
         </div>
 
         <div ng-show="resultFound" class="col-lg-12" id="weatherResults">
-            <h2><span id="weatherInformation">Current Weather in {{locationName}}, {{country.country}} </span><img src="http://openweathermap.org/images/flags/{{country.country | lowercase}}.png"></h2>
-            <h3><img src="http://openweathermap.org/img/w/{{weather.icon}}.png"> {{other.temp}} &deg;C {{weather.main}} ({{weather.description}})</h3>
+            <h2><span id="weatherInformation">Current Weather in {{locationName}}, {{country.country}} </span><img ng-src="http://openweathermap.org/images/flags/{{country.country | lowercase}}.png"></h2>
+            <h3><img ng-src="http://openweathermap.org/img/w/{{weather.icon}}.png"> {{other.temp}} &deg;C {{weather.main}} ({{weather.description}})</h3>
             <p ng-model="getDate">Fetched at: {{getDate * 1000 | date:'dd/MM/yyyy HH:mm:ss Z'}}</p>
 
             <table class="table table-bordered table-striped">
